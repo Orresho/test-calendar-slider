@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Header css
+*******************************************************/
+
+body {
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+#Interval-text{
+    pointer-events: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.header{
+    background-color:#ffffff;
+    width: 100%;
+    height: 95px;
+    border-bottom: solid 1px #C9C7C7; 
+}
+span{
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.img{
+    margin-top: 1%;
+    
+}
+/*******************************************************/
+.col-lg-3 {
+    width: 100%;
+}
+.input-group {
+    margin: 0 auto;
+}
+.input-group-btn{
+    display: block; 
+}
+.form-control{
+    width: 70%;
+}
+
+.btn-primary{
+    background-color: #f05a1a;
+    border-color: #f05a1a;
+}
+.btn-primary:active{
+    background-color: white;
+    color: #f05a1a;
+}
+#interval{
+    border-radius: 4%;
+}

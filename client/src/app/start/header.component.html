@@ -1,0 +1,36 @@
+<div [style.width.px]="sideWidth" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+  <!-- Button for changing interval value -->
+    <div class="row">
+        <div class="center-block">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="input-group">
+                <a id="Interval-text">Change interval</a>
+                <br>
+            <input 
+                    id="interval"
+                    type="number"
+                    class="form-control"
+                    placeholder="Enter the interval.."
+                    name="interval"
+                    ngModel
+                    required
+                    >
+            <div class="input-group-btn">
+            <button
+                    class="btn btn-primary"
+                    type="submit"
+                    >Commit</button>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <span style="cursor:pointer" (click)="openNav()">
+        <img class="img" src="http://education.hemsida.eu/wp-content/uploads/2015/10/softhouse-education-logo1-300x58.png">
+    </span>
+</div>

@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <h1 class="header">Upcoming seminars</h1>
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides">
+      <div class="col-md-3">
+        <div class="info-event">
+          <img src="{{slide.imageUrl}}" alt="Los Angeles" class="img-event" style="width: 300px;">
+          <!-- img for the event -->
+          <span>{{slide.title}}</span><br> {{slide.location}} {{slide.date}}
+          <br>
+        </div>
+      </div>
+    </div>
+  </ngx-slick>
+</div>
