@@ -12,8 +12,8 @@ declare var $;
 })
 export class SlideComponent implements OnInit, OnChanges {
     slides: Slide[];
-    @Input() speedes: string;
-    public myInterval = 10000;
+    @Input() speedes: string; // Value from click event
+    public myInterval = 5000; // Default interval value from slide.html
 
     constructor(private slideService: SlideService) {
     }
@@ -58,7 +58,7 @@ export class SlideComponent implements OnInit, OnChanges {
         "slidesToShow": 1,
         "slidesToScroll": 1,
         "autoplay": true,
-        "autoplaySpeed": this.myInterval,
+        "autoplaySpeed": this.speedes, //this.myInterval
         "infinite": true,
         "pauseOnHover": false,
         "pauseOnFocus": false,
@@ -67,7 +67,7 @@ export class SlideComponent implements OnInit, OnChanges {
         "dots": true,
         "adaptiveHeight": true,
         "fade": true,
-        "slickSetOption": {"autoplaySpeed": this.myInterval, "refresh": true},
+        // "slickSetOption": {"autoplaySpeed": this.myInterval, "refresh": true},
     };
     
 }
